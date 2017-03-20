@@ -1,0 +1,5 @@
+this is a test file
+here is some test text
+wow the first three lines all contain the string "test"
+Is this a coincidence
+I THINK NOT
