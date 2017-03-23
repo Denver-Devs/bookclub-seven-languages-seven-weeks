@@ -25,11 +25,11 @@ module ActsAsCsv
             filename = self.class.to_s.downcase + '.csv'
             f = File.new(filename)
             @headers = f.gets.chomp.split(', ')
-            f.each { |r| @csv_contents << r.chomp.split(', ')}
+            f.each {|r| @csv_contents << r.chomp.split(', ')}
         end
 
         def each(&block)
-            csv_contents.each { |row| yield CsvRow.new(headers, row) }
+            csv_contents.each {|row| yield CsvRow.new(headers, row)}
         end
     end
 end
@@ -56,7 +56,7 @@ end
 
 csv = RubyCsv.new
 puts "items in column one:"
-csv.each { |row| p row.one }
+csv.each {|row| p row.one}
 
 puts "items in column two:"
-csv.each { |row| p row.two }
+csv.each {|row| p row.two}
