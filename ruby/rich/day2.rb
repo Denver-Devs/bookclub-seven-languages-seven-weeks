@@ -54,4 +54,5 @@ def grepp(file, string)
 	end
 end
 
-grepp('week2.txt', 'Code')
+puts "checking day2.txt for the string 'Code'..."
+grepp('day2.txt', 'Code')
