@@ -37,7 +37,7 @@ end
 puts "Pick a number between 0 and 9."
 number = gets
 
-if !number.is_number?
+unless number.is_number?
     puts "A NUMBER"
     exit(1)
 end
