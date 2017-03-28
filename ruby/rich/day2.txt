@@ -1,0 +1,21 @@
+# Find out how to access files with and without code blocks. What is the benefit of the code block?
+# With:
+File.open('week2.txt') {|f| f.each_line {|i| puts i}}
+# Without:
+f = File.open('week2.txt')
+f.each_line {|i| puts i}
+f.close
+# Code Block Advantage: 
+stream will close itself
+
+# How would you translate a hash to an array? 
+hash.to_a
+# Can you translate arrays to hashes?
+hash = []
+array.map { |i| hash[hash.count] = i }
+
+# Can you iterate through a hash?
+hash.each {|i| puts i}
+
+# You can use Ruby arrays as stacks. What other common data structures do arrays support?
+struct, dict, list, queue, etc
