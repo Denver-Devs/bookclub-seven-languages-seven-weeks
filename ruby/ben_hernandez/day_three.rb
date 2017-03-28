@@ -8,9 +8,12 @@ class ActsAsCsv
     end
   end
 
-  class << self
-    headers :@headers
-    csv_contents :@result
+  def headers
+    @headers
+  end
+
+  def csv_contents
+    @csv_contents
   end
 
   def each
