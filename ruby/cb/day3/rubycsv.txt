@@ -1,0 +1,4 @@
+name,color,type,mood
+alaska,black,cat,reclusive
+harper,black,dog,concerned
+biden,white,dog,frantic
