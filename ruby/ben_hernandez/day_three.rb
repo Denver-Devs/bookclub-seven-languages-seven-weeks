@@ -1,44 +1,53 @@
+# This is a class.
 class ActsAsCsv
-    def read
-        file = File.new(self.class.to_s.downcase + '.csv')
-        @headers = file.gets.chomp.split(', ')
-        file.each do |row|
-            @result << row.chomp.split(', ')
-        end
+  def read
+    file = File.new(self.class.to_s.downcase + '.csv')
+    @headers = file.gets.chomp.split(', ')
+    file.each do |row|
+      @result << row.chomp.split(', ')
     end
-    def headers
-        @headers
-    end
-    def csv_contents
-        @result
-    end
-    def each
-        @result.each { |value| yield CsvRow.new(headers, value) }
-    end
-    def initialize
-        @result = []
-        read
-    end
+  end
+
+  class << self
+    headers :@headers
+    csv_contents :@result
+  end
+
+  def each
+    @result.each { |value| yield CsvRow.new(headers, value) }
+  end
+
+  def initialize
+    @result = []
+    read
+  end
 end
 
 class RubyCsv < ActsAsCsv
 end
 
+# This is another class.
 class CsvRow
-
-    def method_missing name
-        @row[@map[name]]
+  def method_missing(name)
+    if @map[name]
+      @row[@map[name]]
+    else super
     end
-    def initialize(headers, row)
-        @row = row
-        @map = { }
-        headers.each_with_index { |h, i| @map[h.to_sym] = i }
-    end
+  end
 
+  def respond_to_missing?(method_name)
+    super(method_name)
+  end
+
+  def initialize(headers, row)
+    @row = row
+    @map = {}
+    headers.each_with_index { |h, i| @map[h.to_sym] = i }
+  end
 end
 
-def title text
-    " (╯ರ ~ ರ）╯︵ ┻━┻ #{text} "
+def title(text)
+  " (╯ರ ~ ರ）╯︵ ┻━┻ #{text} "
 end
 
 m = RubyCsv.new
