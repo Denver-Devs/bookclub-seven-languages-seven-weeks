@@ -8,13 +8,8 @@ class ActsAsCsv
     end
   end
 
-  def headers
-    @headers
-  end
-
-  def csv_contents
-    @csv_contents
-  end
+  attr_reader :headers
+  attr_reader :csv_contents
 
   def each
     @result.each { |value| yield CsvRow.new(headers, value) }
