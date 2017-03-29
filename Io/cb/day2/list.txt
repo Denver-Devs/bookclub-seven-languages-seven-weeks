@@ -1,0 +1,3 @@
+TwoDimList clone do(
+	lists := list(list("a", "d");, list("b", "e");, list("c", "f"););
+)
