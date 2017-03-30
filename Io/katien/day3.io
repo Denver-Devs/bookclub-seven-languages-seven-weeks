@@ -1,4 +1,7 @@
-# XML
+# Enhance the XML program to add spaces to show the indentation structure.
+# Enhance the XML program to handle attributes: if the first argu- ment is a map (use the curly brackets syntax), add attributes to the XML program. For example:
+# book({"author": "Tate"}...) would print <book author="Tate">:
+
 Builder := Object clone
 Builder indent := 0
 
@@ -12,7 +15,7 @@ Builder forward := method(
         write("<", call message name)
         call message arguments at(0) arguments foreach(arg,
             attr := arg asString split(" : ") at(0) removePrefix("\"") removeSuffix("\"")
-        write(" ", attr, "=", arg asString split(" : ") at(1))
+            write(" ", attr, "=", arg asString split(" : ") at(1))
         )
         writeln(">")
     )
@@ -48,7 +51,7 @@ b1 body(
         },
         li("item 1 - ",
             a(
-                {"href" : "google.com"}, 
+                {"href" : "google.com"},
                 "link 1"
             )
         ),
@@ -61,3 +64,14 @@ b1 body(
     ),
     p("A test paragraph to go with your list")
 )
+writeln
+
+# Create a list syntax that uses brackets.
+Object squareBrackets := method(call message arguments)
+List squareBrackets := method(
+    self at(call message arguments at(0) asString asNumber)
+)
+people := ["kate", "tom", "james"]
+writeln("the people are: ", people)
+writeln("the second person is: ", people[1])
+writeln("there's no person 10: ", people[9])
