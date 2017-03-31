@@ -1,0 +1,12 @@
+Builder html(
+  head(
+    title("My Website")
+  )
+  body(
+    h1("Welcome to my website"),
+    div({"class": "MainContent"},
+      p("content"),
+      p("more content and", a({"href": "http://www.google.com"}, "a clicky link"))
+    )
+  )
+)
