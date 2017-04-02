@@ -1,0 +1,4 @@
+1) Io must be strongly typed; 1 + "one" chokes with Exception: argument 0 to method '+' must be a Number, not a 'Sequence.'
+2) 0 is true (Io> 0 and true ==> true); "" is true (Io> "" and true ==> true); nil is false (Io> nil and true ==> false)
+3) You can message 'proto' with slotNames.
+4) = is slot-checking assignment that can throw; := is slot-creating assignment; ::= is slot-creating and setter-creating assignment
