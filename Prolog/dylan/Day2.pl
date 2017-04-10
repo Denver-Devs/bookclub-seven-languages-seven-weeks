@@ -1,13 +1,14 @@
 % Compile with `gplc Day2.pl`; run with `./Day2` (might need to chmod the executable)
 
-% Part 1- Reverse elements of a list
+% Part 1 - Reverse elements of a list
+
 reversal([], []).                                       % Base case - empty list reverses to itself
 reversal([Head|Tail], List) :-                          % Recursive case - backwards Tail concatenated with Head must form input List
     reversal(Tail, BackwardsTail),
     append(BackwardsTail, [Head], List).
 
 
-% Part 2
+% Part 2 - Find minimum element in a list
 
 smallest([Minimum], Minimum).                           % Base case - list of one element is its own Minimum
 smallest([Head1|[Head2|Tail]], CurrentMinimum) :-       % Recursive case 1 - element at start of remaining list is smaller than second element in remaining list
@@ -18,7 +19,7 @@ smallest([Head1|[Head2|Tail]], CurrentMinimum) :-       % Recursive case 2 - ele
     smallest([Head2|Tail], CurrentMinimum).
 
 
-% Part 3
+% Part 3 - Sort elements in a list
 
 mergesort([], []).                                      % Base case - empty list is sorted
 mergesort([A], [A]).                                    % Base case 2 - Single element is sorted too
@@ -37,10 +38,7 @@ merge([Head1|Tail1], [Head2|Tail2], [Head2|Tail]) :-    % Recursive case 2 - Hea
     Head1 > Head2,
     merge([Head1|Tail1], Tail2, Tail).
 
-
-% This halving code shamelessly lifted from http://kti.mff.cuni.cz/~bartak/prolog/recursion.html
-halve(L,A,B):-hv(L,[],A,B).
-   
+halve(L,A,B):-hv(L,[],A,B).                             % This halving code shamelessly lifted from http://kti.mff.cuni.cz/~bartak/prolog/recursion.html   
 hv(L, L, [], L).      % for lists of even length
 hv(L, [_|L], [], L).  % for lists of odd length
 hv([H|T], Acc, [H|L], B) :-
