@@ -1,5 +1,4 @@
-import akka.actor.{ ActorRef, ActorSystem, Props, Actor, Inbox }
-import scala.concurrent.duration._
+import akka.actor.{ ActorSystem, Props, Actor }
 
 // simple objects act as messages
 case object Poke
@@ -18,8 +17,8 @@ class Kid(name: String) extends Actor {
     }
 }
 
-object HelloAkkaScala extends App {
-    // ActorSystem is heavyweight, create only one per application. manages thread allocation
+object DayThreeExample extends App {
+    // actor system is heavyweight, create only one per application. manages thread allocation
     val system = ActorSystem("basicsystem")
 
     // instantiate actors
