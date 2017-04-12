@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.example"
+		module="hello_2.12"
+		revision="0.1.0-SNAPSHOT"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170410191211"/>
+	<dependencies>
+		<module organisation="com.typesafe.akka" name="akka-testkit_2.12">
+			<revision name="2.4.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.example" name="hello_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.12">
+			<revision name="2.4.4" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.example" name="hello_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="com.example" name="hello_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12" rev-constraint-default="2.12" rev-constraint-dynamic="2.12" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

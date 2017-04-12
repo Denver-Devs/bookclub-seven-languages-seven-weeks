@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.example"
+		module="daythree$sources_javadoc_2.11"
+		revision="0.1.0-SNAPSHOT"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170411162419"/>
+	<dependencies>
+		<module organisation="org.scalatest" name="scalatest_2.11">
+			<revision name="3.0.1" status="release" pubdate="20161109205601" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="36">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="5287" time="0" location="/Users/CityLights/.ivy2/cache/org.scalatest/scalatest_2.11/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalatest_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1643660" time="476" location="/Users/CityLights/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1-sources.jar"/>
+					</artifact>
+					<artifact name="scalatest_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="8424668" time="2046" location="/Users/CityLights/.ivy2/cache/org.scalatest/scalatest_2.11/docs/scalatest_2.11-3.0.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalatest/scalatest_2.11/3.0.1/scalatest_2.11-3.0.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.5" status="release" pubdate="20150724131224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="109244" time="144" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-sources.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1230464" time="366" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.11">
+			<revision name="3.0.1" status="release" pubdate="20161109205324" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2967" time="0" location="/Users/CityLights/.ivy2/cache/org.scalactic/scalactic_2.11/ivy-3.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalactic_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1096589" time="303" location="/Users/CityLights/.ivy2/cache/org.scalactic/scalactic_2.11/docs/scalactic_2.11-3.0.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalactic_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="201082" time="594" location="/Users/CityLights/.ivy2/cache/org.scalactic/scalactic_2.11/srcs/scalactic_2.11-3.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.11/3.0.1/scalactic_2.11-3.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.8" status="release" pubdate="20160304082641" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2825" time="0" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="4386937" time="994" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.11.8-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="562895" time="231" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.ruippeixotog" name="scala-scraper_2.11">
+			<revision name="1.2.0" status="release" pubdate="20161206102631" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/ruippeixotog/scala-scraper" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3901" time="0" location="/Users/CityLights/.ivy2/cache/net.ruippeixotog/scala-scraper_2.11/ivy-1.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/ruippeixotog/scala-scraper_2.11/1.2.0/scala-scraper_2.11-1.2.0.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.2.0" rev-constraint-default="1.2.0" rev-constraint-dynamic="1.2.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-scraper_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="633226" time="388" location="/Users/CityLights/.ivy2/cache/net.ruippeixotog/scala-scraper_2.11/docs/scala-scraper_2.11-1.2.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/ruippeixotog/scala-scraper_2.11/1.2.0/scala-scraper_2.11-1.2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-scraper_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="18067" time="816" location="/Users/CityLights/.ivy2/cache/net.ruippeixotog/scala-scraper_2.11/srcs/scala-scraper_2.11-1.2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/ruippeixotog/scala-scraper_2.11/1.2.0/scala-scraper_2.11-1.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jsoup" name="jsoup">
+			<revision name="1.10.1" status="release" pubdate="20161023122723" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jsoup.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="The MIT License" url="https://jsoup.org/license"/>
+				<metadata-artifact status="no" details="" size="3220" time="0" location="/Users/CityLights/.ivy2/cache/org.jsoup/jsoup/ivy-1.10.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.10.1/jsoup-1.10.1.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.10.1" rev-constraint-default="1.10.1" rev-constraint-dynamic="1.10.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jsoup" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="617241" time="356" location="/Users/CityLights/.ivy2/cache/org.jsoup/jsoup/docs/jsoup-1.10.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.10.1/jsoup-1.10.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="jsoup" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="164418" time="146" location="/Users/CityLights/.ivy2/cache/org.jsoup/jsoup/srcs/jsoup-1.10.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jsoup/jsoup/1.10.1/jsoup-1.10.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.htmlunit" name="htmlunit">
+			<revision name="2.23" status="release" pubdate="20160727073736" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7612" time="0" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/ivy-2.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.23/htmlunit-2.23.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.23" rev-constraint-default="2.23" rev-constraint-dynamic="2.23" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="htmlunit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1796445" time="476" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/srcs/htmlunit-2.23-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.23/htmlunit-2.23-sources.jar"/>
+					</artifact>
+					<artifact name="htmlunit" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="8823267" time="1577" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit/docs/htmlunit-2.23-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit/2.23/htmlunit-2.23-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.5" status="release" pubdate="20160422085236" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11588" time="0" location="/Users/CityLights/.ivy2/cache/commons-io/commons-io/ivy-2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.5" rev-constraint-default="2.5" rev-constraint-dynamic="2.5" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="765027" time="326" location="/Users/CityLights/.ivy2/cache/commons-io/commons-io/docs/commons-io-2.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="275699" time="197" location="/Users/CityLights/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.5/commons-io-2.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.cssparser" name="cssparser">
+			<revision name="0.9.20" status="release" pubdate="20160723042756" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://cssparser.sourceforge.net/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3776" time="0" location="/Users/CityLights/.ivy2/cache/net.sourceforge.cssparser/cssparser/ivy-0.9.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.20/cssparser-0.9.20.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="0.9.20" rev-constraint-default="0.9.20" rev-constraint-dynamic="0.9.20" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="cssparser" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="241231" time="182" location="/Users/CityLights/.ivy2/cache/net.sourceforge.cssparser/cssparser/srcs/cssparser-0.9.20-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.20/cssparser-0.9.20-sources.jar"/>
+					</artifact>
+					<artifact name="cssparser" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="412779" time="264" location="/Users/CityLights/.ivy2/cache/net.sourceforge.cssparser/cssparser/docs/cssparser-0.9.20-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/cssparser/cssparser/0.9.20/cssparser-0.9.20-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.w3c.css" name="sac">
+			<revision name="1.3" status="release" pubdate="20080322224250" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.w3.org/Style/CSS/SAC/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="The W3C Software License" url="http://www.w3.org/Consortium/Legal/copyright-software-19980720"/>
+				<metadata-artifact status="no" details="" size="2511" time="0" location="/Users/CityLights/.ivy2/cache/org.w3c.css/sac/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/w3c/css/sac/1.3/sac-1.3.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="sac" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="33134" time="159" location="/Users/CityLights/.ivy2/cache/org.w3c.css/sac/srcs/sac-1.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/w3c/css/sac/1.3/sac-1.3-sources.jar"/>
+					</artifact>
+					<artifact name="sac" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.htmlunit" name="htmlunit-core-js">
+			<revision name="2.23" status="release" pubdate="20160727063346" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="Mozilla Public License version 2.0" url="http://www.mozilla.org/MPL/2.0/"/>
+				<metadata-artifact status="no" details="" size="2731" time="0" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/ivy-2.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.23/htmlunit-core-js-2.23.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.23" rev-constraint-default="2.23" rev-constraint-dynamic="2.23" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="htmlunit-core-js" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2137132" time="539" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/docs/htmlunit-core-js-2.23-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.23/htmlunit-core-js-2.23-javadoc.jar"/>
+					</artifact>
+					<artifact name="htmlunit-core-js" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="938551" time="337" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/htmlunit-core-js/srcs/htmlunit-core-js-2.23-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/htmlunit-core-js/2.23/htmlunit-core-js-2.23-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106071535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10608" time="0" location="/Users/CityLights/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="433991" time="186" location="/Users/CityLights/.ivy2/cache/commons-codec/commons-codec/docs/commons-codec-1.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="301032" time="178" location="/Users/CityLights/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="xalan">
+			<revision name="2.7.2" status="release" pubdate="20140724124830" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3178" time="0" location="/Users/CityLights/.ivy2/cache/xalan/xalan/ivy-2.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xalan" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="7986941" time="1833" location="/Users/CityLights/.ivy2/cache/xalan/xalan/docs/xalan-2.7.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3395855" time="1590" location="/Users/CityLights/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="serializer">
+			<revision name="2.7.2" status="release" pubdate="20140724124454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/xalan-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2988" time="0" location="/Users/CityLights/.ivy2/cache/xalan/serializer/ivy-2.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.7.2" rev-constraint-default="2.7.2" rev-constraint-dynamic="2.7.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="serializer" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="7986941" time="3791" location="/Users/CityLights/.ivy2/cache/xalan/serializer/docs/serializer-2.7.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="serializer" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3395855" time="765" location="/Users/CityLights/.ivy2/cache/xalan/serializer/srcs/serializer-2.7.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.1" status="release" pubdate="20160924065320" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2875" time="0" location="/Users/CityLights/.ivy2/cache/com.typesafe/config/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="455570" time="229" location="/Users/CityLights/.ivy2/cache/com.typesafe/config/docs/config-1.3.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="170512" time="153" location="/Users/CityLights/.ivy2/cache/com.typesafe/config/srcs/config-1.3.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.1/config-1.3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.nscala-time" name="nscala-time_2.11">
+			<revision name="2.14.0" status="release" pubdate="20160908094737" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/nscala-time/nscala-time" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache" url="http://www.opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="no" details="" size="2947" time="0" location="/Users/CityLights/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/ivy-2.14.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.14.0/nscala-time_2.11-2.14.0.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.14.0" rev-constraint-default="2.14.0" rev-constraint-dynamic="2.14.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="nscala-time_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="40106" time="131" location="/Users/CityLights/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/srcs/nscala-time_2.11-2.14.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.14.0/nscala-time_2.11-2.14.0-sources.jar"/>
+					</artifact>
+					<artifact name="nscala-time_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="641003" time="269" location="/Users/CityLights/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/docs/nscala-time_2.11-2.14.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.11/2.14.0/nscala-time_2.11-2.14.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.9.4" status="release" pubdate="20160527032535" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6595" time="0" location="/Users/CityLights/.ivy2/cache/joda-time/joda-time/ivy-2.9.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.9.4" rev-constraint-default="2.9.4" rev-constraint-dynamic="2.9.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="774317" time="274" location="/Users/CityLights/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4-sources.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1321205" time="388" location="/Users/CityLights/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.9.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.4/joda-time-2.9.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.2" status="release" pubdate="20111027135117" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-convert.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3246" time="0" location="/Users/CityLights/.ivy2/cache/org.joda/joda-convert/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19105" time="166" location="/Users/CityLights/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2-sources.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="56597" time="158" location="/Users/CityLights/.ivy2/cache/org.joda/joda-convert/docs/joda-convert-1.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.4" status="release" pubdate="20150430080747" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2929" time="0" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="695301" time="285" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/docs/scala-parser-combinators_2.11-1.0.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="42276" time="137" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-client">
+			<revision name="9.2.18.v20160721" status="release" pubdate="20160721134739" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="13681" time="0" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/ivy-9.2.18.v20160721.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.2.18.v20160721/websocket-client-9.2.18.v20160721.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="9.2.18.v20160721" rev-constraint-default="9.2.18.v20160721" rev-constraint-dynamic="9.2.18.v20160721" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="websocket-client" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="147066" time="147" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/docs/websocket-client-9.2.18.v20160721-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.2.18.v20160721/websocket-client-9.2.18.v20160721-javadoc.jar"/>
+					</artifact>
+					<artifact name="websocket-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="24959" time="124" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-client/srcs/websocket-client-9.2.18.v20160721-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-client/9.2.18.v20160721/websocket-client-9.2.18.v20160721-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.htmlunit" name="neko-htmlunit">
+			<revision name="2.23" status="release" pubdate="20160727041309" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://htmlunit.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3167" time="0" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/ivy-2.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.23/neko-htmlunit-2.23.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.23" rev-constraint-default="2.23" rev-constraint-dynamic="2.23" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="neko-htmlunit" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="103575" time="147" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/srcs/neko-htmlunit-2.23-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.23/neko-htmlunit-2.23-sources.jar"/>
+					</artifact>
+					<artifact name="neko-htmlunit" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="300361" time="193" location="/Users/CityLights/.ivy2/cache/net.sourceforge.htmlunit/neko-htmlunit/docs/neko-htmlunit-2.23-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/htmlunit/neko-htmlunit/2.23/neko-htmlunit-2.23-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.11.0" status="release" pubdate="20130220152006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://xerces.apache.org/xerces2-j/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4249" time="0" location="/Users/CityLights/.ivy2/cache/xerces/xercesImpl/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/CityLights/Downloads/activator-1.2.7/repository/xerces/xercesImpl/2.11.0/ivys/ivy.xml"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2136909" time="545" location="/Users/CityLights/.ivy2/cache/xerces/xercesImpl/docs/xercesImpl-2.11.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2081596" time="453" location="/Users/CityLights/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.11.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.4.01" status="release" pubdate="20110819201111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="The SAX License" url="http://www.saxproject.org/copying.html"/>
+				<license name="The W3C License" url="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip"/>
+				<metadata-artifact status="no" details="" size="3119" time="0" location="/Users/CityLights/.ivy2/cache/xml-apis/xml-apis/ivy-1.4.01.xml" searched="false" origin-is-local="false" origin-location="file:/Users/CityLights/Downloads/activator-1.2.7/repository/xml-apis/xml-apis/1.4.01/ivys/ivy.xml"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.4.01" rev-constraint-default="1.4.01" rev-constraint-dynamic="1.4.01" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xml-apis" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1480162" time="507" location="/Users/CityLights/.ivy2/cache/xml-apis/xml-apis/docs/xml-apis-1.4.01-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-javadoc.jar"/>
+					</artifact>
+					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="656529" time="250" location="/Users/CityLights/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.4.01-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpmime">
+			<revision name="4.5.2" status="release" pubdate="20160221090652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9321" time="0" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpmime/ivy-4.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpmime" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38715" time="125" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpmime/srcs/httpmime-4.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2-sources.jar"/>
+					</artifact>
+					<artifact name="httpmime" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="136126" time="138" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpmime/docs/httpmime-4.5.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-common">
+			<revision name="9.2.18.v20160721" status="release" pubdate="20160721134713" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="13404" time="0" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/ivy-9.2.18.v20160721.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.2.18.v20160721/websocket-common-9.2.18.v20160721.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="9.2.18.v20160721" rev-constraint-default="9.2.18.v20160721" rev-constraint-dynamic="9.2.18.v20160721" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="websocket-common" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="734187" time="229" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/docs/websocket-common-9.2.18.v20160721-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.2.18.v20160721/websocket-common-9.2.18.v20160721-javadoc.jar"/>
+					</artifact>
+					<artifact name="websocket-common" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="120005" time="149" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-common/srcs/websocket-common-9.2.18.v20160721-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-common/9.2.18.v20160721/websocket-common-9.2.18.v20160721-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="9.2.18.v20160721" status="release" pubdate="20160721133716" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="11845" time="0" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.2.18.v20160721.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.18.v20160721/jetty-io-9.2.18.v20160721.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="9.2.18.v20160721" rev-constraint-default="9.2.18.v20160721" rev-constraint-dynamic="9.2.18.v20160721" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jetty-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="59326" time="136" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-io/srcs/jetty-io-9.2.18.v20160721-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.18.v20160721/jetty-io-9.2.18.v20160721-sources.jar"/>
+					</artifact>
+					<artifact name="jetty-io" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="302456" time="306" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-io/docs/jetty-io-9.2.18.v20160721-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.18.v20160721/jetty-io-9.2.18.v20160721-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty.websocket" name="websocket-api">
+			<revision name="9.2.18.v20160721" status="release" pubdate="20160721134640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12864" time="0" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/ivy-9.2.18.v20160721.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.2.18.v20160721/websocket-api-9.2.18.v20160721.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="9.2.18.v20160721" rev-constraint-default="9.2.18.v20160721" rev-constraint-dynamic="9.2.18.v20160721" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="websocket-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="271967" time="183" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/docs/websocket-api-9.2.18.v20160721-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.2.18.v20160721/websocket-api-9.2.18.v20160721-javadoc.jar"/>
+					</artifact>
+					<artifact name="websocket-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="46664" time="147" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty.websocket/websocket-api/srcs/websocket-api-9.2.18.v20160721-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/websocket/websocket-api/9.2.18.v20160721/websocket-api-9.2.18.v20160721-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="9.2.18.v20160721" status="release" pubdate="20160721133621" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.eclipse.org/jetty" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<license name="Eclipse Public License - Version 1.0" url="http://www.eclipse.org/org/documents/epl-v10.php"/>
+				<metadata-artifact status="no" details="" size="12116" time="0" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.2.18.v20160721.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.18.v20160721/jetty-util-9.2.18.v20160721.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="9.2.18.v20160721" rev-constraint-default="9.2.18.v20160721" rev-constraint-dynamic="9.2.18.v20160721" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jetty-util" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1057432" time="372" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-util/docs/jetty-util-9.2.18.v20160721-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.18.v20160721/jetty-util-9.2.18.v20160721-javadoc.jar"/>
+					</artifact>
+					<artifact name="jetty-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="258267" time="149" location="/Users/CityLights/.ivy2/cache/org.eclipse.jetty/jetty-util/srcs/jetty-util-9.2.18.v20160721-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.18.v20160721/jetty-util-9.2.18.v20160721-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.5.2" status="release" pubdate="20160221090550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9802" time="0" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="4.5.2" rev-constraint-default="4.5.2" rev-constraint-dynamic="4.5.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpclient" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2348172" time="529" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpclient/docs/httpclient-4.5.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="707899" time="244" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.4.4" status="release" pubdate="20151026111814" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7705" time="0" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="4.4.4" rev-constraint-default="4.4.4" rev-constraint-dynamic="4.4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="405277" time="637" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.4.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4-sources.jar"/>
+					</artifact>
+					<artifact name="httpcore" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1518747" time="466" location="/Users/CityLights/.ivy2/cache/org.apache.httpcomponents/httpcore/docs/httpcore-4.4.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.2" status="release" pubdate="20140705121228" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11623" time="0" location="/Users/CityLights/.ivy2/cache/commons-logging/commons-logging/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-logging" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="158448" time="257" location="/Users/CityLights/.ivy2/cache/commons-logging/commons-logging/docs/commons-logging-1.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="73295" time="164" location="/Users/CityLights/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.11">
+			<revision name="7.2.8" status="release" pubdate="20161203055538" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="1">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2639" time="0" location="/Users/CityLights/.ivy2/cache/org.scalaz/scalaz-core_2.11/ivy-7.2.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.11/7.2.8/scalaz-core_2.11-7.2.8.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="7.2.8" rev-constraint-default="7.2.8" rev-constraint-dynamic="7.2.8" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="6391218" time="1871" location="/Users/CityLights/.ivy2/cache/org.scalaz/scalaz-core_2.11/docs/scalaz-core_2.11-7.2.8-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.11/7.2.8/scalaz-core_2.11-7.2.8-javadoc.jar"/>
+					</artifact>
+					<artifact name="scalaz-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="366623" time="328" location="/Users/CityLights/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.2.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.11/7.2.8/scalaz-core_2.11-7.2.8-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.8" status="release" pubdate="20160304082633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="7">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.11.8" rev-constraint-default="2.11.8" rev-constraint-dynamic="2.11.8" callerrev="0.1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.11.8/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="911686" time="278" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="21970519" time="4440" location="/Users/CityLights/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.8-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-testkit_2.11">
+			<revision name="2.4.4" status="release" pubdate="20160412235934" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3543" time="0" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.11/2.4.4/akka-testkit_2.11-2.4.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-testkit_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="266290" time="286" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/docs/akka-testkit_2.11-2.4.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.11/2.4.4/akka-testkit_2.11-2.4.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-testkit_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="31698" time="130" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/srcs/akka-testkit_2.11-2.4.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.11/2.4.4/akka-testkit_2.11-2.4.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.4.4" status="release" pubdate="20160412235803" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="24">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2956" time="0" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.4.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.4/akka-actor_2.11-2.4.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="2.4.4" rev-constraint-default="2.4.4" rev-constraint-dynamic="2.4.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="386591" time="189" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.4.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.4/akka-actor_2.11-2.4.4-sources.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3796556" time="1040" location="/Users/CityLights/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/docs/akka-actor_2.11-2.4.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.4/akka-actor_2.11-2.4.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-java8-compat_2.11">
+			<revision name="0.7.0" status="release" pubdate="20150831050233" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3036" time="0" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/ivy-0.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-java8-compat_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1193196" time="298" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/docs/scala-java8-compat_2.11-0.7.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-java8-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="12469" time="157" location="/Users/CityLights/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.11/srcs/scala-java8-compat_2.11-0.7.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.4" status="release" pubdate="20150403063112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11673" time="0" location="/Users/CityLights/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom"/>
+				<caller organisation="com.example" name="daythree$sources_javadoc_2.11" conf="compile-internal, compile, provided, optional" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="0.1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1093607" time="330" location="/Users/CityLights/.ivy2/cache/org.apache.commons/commons-lang3/docs/commons-lang3-3.4-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="487156" time="197" location="/Users/CityLights/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.4-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
