@@ -3,41 +3,54 @@
 % The documentation for Erlang’s OTP library - http://erlang.org/doc/
 % Do:
 % Write a function that uses recursion to return the number of words in a string.
-% Write a function that uses recursion to count to ten.
-% Write a function that uses matching to selectively print “success” or “error: message” given input of the form {error, Message} or suc- cess.
 
 -module(day1).
-
 -export([wordCount/1]).
 -export([countToTen/0]).
--export([countToN/1]).
 -export([response/1]).
 
-wordCount([]) -> 0;
-wordCount(Str) ->
-    [_|Tail] = string:tokens(Str, " "),
-    TailString = string:join(Tail, " "),
-    wordCount(TailString) + 1.
-% day1:wordCount("a test sentence with some words").
+removeConsecutiveSpaces([]) -> [];
+removeConsecutiveSpaces([32,32|T]) -> removeConsecutiveSpaces([32|T]);
+removeConsecutiveSpaces([H|T]) -> [H|removeConsecutiveSpaces(T)].
 
-countToTen() -> countToN(10).
-countToN(N) -> counter(0, N).
+removeLeadingSpaces([32|T]) -> removeLeadingSpaces(T);
+removeLeadingSpaces([H|T]) -> [H|T].
 
-counter(A, A) -> A;
-counter(Start, Finish) ->
-    I = Start+ 1,
-    counter(I, Finish).
+removeTrailingSpaces(String) -> lists:reverse(removeLeadingSpaces(lists:reverse(String))).
 
+countSpaces([], Ctr) -> Ctr + 1;
+countSpaces([32|T], Ctr) -> countSpaces(T, Ctr + 1);
+countSpaces([_|T], Ctr) -> countSpaces(T, Ctr).
+
+wordCount(String) ->
+    NoLeadingSpaces = removeLeadingSpaces(String),
+    io:format("Removing leading spaces: ~p~n", [NoLeadingSpaces]),
+    NoTrailingSpaces = removeTrailingSpaces(NoLeadingSpaces),
+    io:format("Removing trailing spaces: ~p~n", [NoTrailingSpaces]),
+    NoConsecutiveSpaces = removeConsecutiveSpaces(NoTrailingSpaces),
+    io:format("Removing consecutive spaces: ~p~n", [NoConsecutiveSpaces]),
+    countSpaces(NoConsecutiveSpaces, 0).
+% day1:wordCount("     a test string      with spaces    ").
+% or you could just use string:words like a sane person...
+% string:words("     a test string      with spaces    ").
+
+% Write a function that uses recursion to count to ten.
+counter(C, E) ->
+    if
+        C < E ->
+            io:format("counter: ~p~n",[C]),
+            counter(C + 1, E);
+        C == E ->
+            io:format("counter: ~p~n",[C]);
+        C > E ->
+            io:format("Counter (~p) must be less than goal (~p)~n",[C, E])
+    end.
+
+countToTen() -> counter(0,10).
 % day1:countToTen().
-% day1:countToN(890).
 
-
-response(success) ->
-    io:format("success"),
-    io:format("~n");
-response({ error, Message }) ->
-    io:format("error: "),
-    io:format(Message),
-    io:format("~n").
+% Write a function that uses matching to selectively print “success” or “error: message” given input of the form {error, Message} or suc- cess.
+response(success) -> io:format("success~n");
+response({ error, Message }) -> io:format("error: ~p~n", [Message]).
 % day1:response(success).
 % day1:response({ error, "404 not found" }).
