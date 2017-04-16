@@ -1,96 +1,92 @@
-% Consider a list of keyword-value tuples, such as [{erlang, "a func- tional language"}, {ruby, "an OO language"}]. Write a function that ac- cepts the list and a keyword and returns the associated value for the keyword.
-% Consider a shopping list that looks like [{item quantity price}, ...]. Write a list comprehension that builds a list of items of the form [{item total_price}, ...], where total_price is quantity times price.
-% Bonus problem:
-% Write a program that reads a tic-tac-toe board presented as a list or a tuple of size nine. Return the winner (x or o) if a winner has been determined, cat if there are no more possible moves, or no_winner if no player has won yet.
-
 -module(day2).
-
--export([finder/2]).
--export([getCost/1]).
--export([threeInARow/1]).
+-export([valForKey/2]).
+-export([totals/1]).
 -export([ticTacToe/1]).
 
-finder(SearchKey, List) ->
-    [Val || { _, Val } <- lists:filter(fun({ ItemKey, _ }) ->
-        SearchKey == ItemKey
-    end, List)].
-% Languages = [
-%     { erlang, "a functional language" },
-%     { io, "a prototype language" },
-%     { ruby, "an OO language" }
+% Consider a list of keyword-value tuples, such as [{erlang, "a functional language"}, {ruby, "an OO language"}].
+% Write a function that accepts the list and a keyword and returns the associated value for the keyword.
+valForKey([], _) -> undefined;
+valForKey([{ SearchKey, Value }|_], SearchKey) -> Value;
+valForKey([_|Tail], SearchKey) -> valForKey(Tail, SearchKey).
+% Family = [
+%     { kate, 20 },
+%     { james, 16 },
+%     { cat, 13 },
+%     { matthew, 11 }
 % ].
-% day2:finder(erlang, Languages).
+% day2:valForKey(Family, kate).
+% day2:valForKey(Family, mike).
 
-getCost(Groceries) ->
-    [{ Name, Qty * Price} || { Name, Qty, Price } <- Groceries].
+% Consider a shopping list that looks like [{item quantity price}, ...].
+% Write a list comprehension that builds a list of items of the form [{item total_price}, ...], where total_price is quantity times price.
+totals(List) -> [ { Item, Qty * Price } || { Item, Qty, Price } <- List].
 % Groceries = [
-%     { cereal, 4, 3 },
-%     { milk, 2, 5 },
-%     { carrots, 10, 0.2 }
+%     { cereal, 3, 5.49},
+%     { carrots, 570, 0.10},
+%     { apples, 5, 0.50},
+%     { peanutButter, 1, 5.00}
 % ].
-% day2:getCost(Groceries).
+% day2:totals(Groceries).
 
-threeInARow([_|[]]) -> true;
-threeInARow([H1,H2|T]) ->
-    (H1 == H2) and threeInARow([H2|T]).
+% Bonus problem:
+% Write a program that reads a tic-tac-toe board presented as a list or a tuple of size nine.
+% Return the winner (x or o) if a winner has been determined,
+% cat if there are no more possible moves, or no_winner if no player has won yet.
+threeInARow([empty, empty, empty|Tail]) -> threeInARow(Tail);
+threeInARow([I, I, I|_]) -> I;
+threeInARow([_, _, _|Tail]) -> threeInARow(Tail);
+threeInARow([]) -> false.
 
-ticTacToe([A1, A2, A3, B1, B2, B3, C1, C2, C3]) ->
-    Row1 = threeInARow([A1, A2, A3]),
-    Row2 = threeInARow([B1, B2, B3]),
-    Row3 = threeInARow([C1, C2, C3]),
+ticTacToe(Rows) ->
+    [A1, A2, A3, B1, B2, B3, C1, C2, C3] = Rows,
+    Cols = [A1, B1, C1, A2, B2, C2, A3, B3, C3],
+    Diags = [A1, B2, C3, A3, B2, C1],
 
-    Col1 = threeInARow([A1, B1, C1]),
-    Col2 = threeInARow([A2, B2, C2]),
-    Col3 = threeInARow([A3, B3, C3]),
+    IsValid = lists:all(fun(I) -> lists:member(I, [x,o,empty]) end, Rows),
 
-    D1 = threeInARow([A1, B2, C3]),
-    D2 = threeInARow([A3, B2, C1]),
-    Finished = lists:any(fun(Val) -> Val == none end, [A1, A2, A3, B1, B2, B3, C1, C2, C3]),
-
-    if
-        Row1 -> A1;
-        Row2 -> B1;
-        Row3 -> C1;
-        Col1 -> A1;
-        Col2 -> A2;
-        Col3 -> A3;
-        D1 -> A1;
-        D2 -> A3;
-        Finished -> "No winner yet";
-        true -> "There are no more possible moves"
+    case threeInARow(lists:append([Rows, Cols, Diags])) of
+        x when IsValid ->
+            io:format("x won~n");
+        o when IsValid ->
+            io:format("o won~n");
+        false when IsValid ->
+            io:format("Nobody has won yet~n");
+        _ ->
+            io:format("Invalid board, pass in a list of 9 x's, o's, and empty's.~n")
     end.
 
-% % x
 % day2:ticTacToe([
-%     x, x, x,
-%     o, o, none,
-%     x, o, x
-% ]).
-
-% % o
-% day2:ticTacToe([
-%     x, x, o,
-%     o, o, none,
+%     x, o, o,
+%     o, x, o,
 %     o, o, x
 % ]).
-
-% % x
+%
 % day2:ticTacToe([
-%     x, x, o,
-%     x, o, none,
-%     x, o, x
+%     x, o, o,
+%     o, o, o,
+%     o, o, x
 % ]).
-
-% % "There are no more possible moves"
+%
 % day2:ticTacToe([
-%     x, o, x,
-%     o, x, o,
-%     o, x, o
+%     o, o, x,
+%     empty, empty, o,
+%     o, o, o
 % ]).
-
-% % "No winner yet"
+%
 % day2:ticTacToe([
-%     x, o, x,
-%     o, none, o,
-%     o, x, o
+%     empty, empty, empty,
+%     empty, empty, empty,
+%     empty, empty, empty
+% ]).
+%
+% day2:ticTacToe([
+%     o, empty, empty,
+%     o, empty, empty,
+%     o, empty, empty
+% ]).
+%
+% day2:ticTacToe([
+%     nope, nope, nope,
+%     o, empty, empty,
+%     o, empty, empty
 % ]).
