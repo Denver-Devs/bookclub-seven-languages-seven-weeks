@@ -40,11 +40,6 @@ doreverse([Head|Tail], Reverse) :-
     doreverse(Tail, ReverseTail),
     append(ReverseTail, [Head], Reverse).
 
-% TODO: these two rules are causing duplicate results??
-% only used if the user queries directly for a single element list or empty list
-% doreverse([], []).
-% doreverse([A], [A]).
-
 % Find the smallest element of a list.
 getsmallest([A, B], El) :- A < B, El = A.
 getsmallest([A, B], El) :- A > B, El = B.

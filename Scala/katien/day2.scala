@@ -15,7 +15,6 @@ println
 // Write a Censor trait with a method that will replace the curse words Shoot and Darn with Pucky and Beans alternatives. Use a map to store the curse words and their alternatives.
 // Load the curse words and alternatives from a file.
 trait Censor {
-   // val badWords = Map("shoot" -> "pucky", "darn" -> "beans")
     val badWords = io.Source.fromFile("badWords.txt").getLines
         .map(line => line.split(' ')(0) -> line.split(' ')(1))
         .toMap
