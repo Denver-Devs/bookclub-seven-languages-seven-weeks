@@ -1,80 +1,97 @@
+% Find:
 % An OTP service that will restart a process if it dies
-% http://erlang.org/doc/man/supervisor.html
-
+% http://erlang.org/doc/design_principles/sup_princ.html - "The basic idea of a supervisor is that it is to keep its child processes alive by restarting them when necessary."
 % Documentation for building a simple OTP server
-% http://learnyousomeerlang.com/what-is-otp
-% http://learnyousomeerlang.com/building-applications-with-otp
-% http://learnyousomeerlang.com/building-otp-applications
-% https://medium.com/@kansi/chatbus-build-your-first-multi-user-chat-room-app-with-erlang-otp-b55f72064901
+% http://erlang.org/doc/design_principles/gen_server_concepts.html#ex
 
--module(day3).
--export([monitorLoop/0]).
-
--behaviour(supervisor).
--export([init/1]).
--export([start/0]).
-
-translateLoop() ->
-    receive
-        "nihao" ->
-            io:format("nihao translates to hi~n"),
-            translateLoop();
-        "zaijian" ->
-            io:format("zaijian translates to bye~n"),
-            translateLoop();
-        kill ->
-            io:format("Translator process ~p killing self~n", [self()]),
-            exit({ translator, die, at, erlang:time() });
-        _ ->
-            io:format("unknown word~n"),
-            translateLoop()
-    end.
-
+% Do:
 % Monitor the translate_service and restart it should it die.
-monitorLoop() ->
-	io:fwrite("Starting monitorLoop~n"),
-    process_flag(trap_exit, true),
-    receive
-        startTranslator ->
-            io:format("monitorLoop reveived startTranslator message, creating and monitoring a new translator~n"),
-            register(translator, spawn_link(fun translateLoop/0)),
-            monitorLoop();
-
-        { 'EXIT', From, Reason } ->
-            io:format("a translator process ~p died with reason ~p.~n", [From,Reason]),
-            self() ! startTranslator,
-            monitorLoop();
-
-        kill ->
-            io:format("monitorLoop reveived kill message, monitorLoop process ~p killing self~n", [self()]),
-            exit({ monitor })
-    end.
-
-
 % Make the Doctor process restart itself if it should die.
 % Make a monitor for the Doctor monitor. If either monitor dies, restart it.
 
-% implement the supervisor behaviour
-start() ->
-    io:fwrite("Starting supervisor demo.~nSpawn monitorLoop process and link to monitor atom.~nSend monitor a startTranslator message.~n"),
-    Pid = spawn_link(day3, monitorLoop, []),
-    register(monitor, Pid),
-    monitor ! startTranslator,
-    {ok, Pid}.
+-module(day3).
+-compile(export_all).
 
-init(_Args) ->
-	{ok, {{one_for_one, 1,60},
-		[{day3, {day3, start, []},
-			permanent, brutal_kill, worker, [day3]}]}}.
+% the translator
+translateLoop() ->
+    receive
+        { Pid, "casa" } ->
+            io:format("translator recieved casa ~n", []),
+            Pid ! { translation, "house" },
+            translateLoop();
+        { Pid, "blanca" } ->
+            io:format("translator recieved blanca ~n", []),
+            Pid ! { translation, "white" },
+            translateLoop();
+        kill ->
+            io:format("Terminating translator.~n"),
+            exit({ translateLoop })
+    end.
 
+% a monitor for the translator
+translatorMonitor() ->
+    process_flag(trap_exit, true),
+
+    receive
+        startTranslator ->
+            io:format("Starting a translator process.~n"),
+            register(translator, spawn_link(?MODULE, translateLoop, [])),
+            translatorMonitor();
+        startMonitorMonitor ->
+            io:format("Starting a monitorMonitor process.~n"),
+            register(monitorMonitor, spawn_link(?MODULE, monitorMonitor, [])),
+            translatorMonitor();
+        { 'EXIT', _, { translateLoop }} ->
+            self() ! startTranslator,
+            translatorMonitor();
+        { 'EXIT', _, { monitorMonitor }} ->
+            self() ! startMonitorMonitor,
+            translatorMonitor();
+        kill ->
+            io:format("Terminating translatorMonitor.~n"),
+            exit({ translatorMonitor })
+    end.
+
+% a monitor for the translatorMonitor
+monitorMonitor() ->
+    process_flag(trap_exit, true),
+
+    receive
+        startTranslatorMonitor ->
+            io:format("Starting a translatorMonitor process.~n"),
+            register(translatorMonitor, spawn_link(?MODULE, translatorMonitor, [])),
+            % start a new translator linked to the new translatorMonitor
+            translatorMonitor ! startTranslator,
+            monitorMonitor();
+        kill ->
+            io:format("Terminating monitorMonitor.~n"),
+            exit({ monitorMonitor });
+        { 'EXIT', _, { translatorMonitor }} ->
+            self() ! startTranslatorMonitor,
+            monitorMonitor()
+    end.
 
 % c(day3).
-% supervisor:start_link(day3,[]).
-
-% these can't all be pasted in at once,
-% enter them one at a time so erlang has time to restart the dead processes before messages are sent
-
-% translator ! "nihao".
+% MonitorMonitor = spawn(day3, monitorMonitor, []).
+% MonitorMonitor ! startTranslatorMonitor.
+%
+% translator ! { self(), "casa" }.
+% flush().
 % translator ! kill.
-% translator ! "zaijian".
-% monitor ! kill.
+% translator ! { self(), "blanca" }.
+% flush().
+%
+% translatorMonitor ! kill.
+% translator ! kill.
+% translator ! { self(), "casa" }.
+% flush().
+%
+% MonitorMonitor ! kill.
+% translatorMonitor ! kill.
+% translator ! kill.
+% translator ! { self(), "blanca" }.
+% flush().
+
+
+% The following bonus questions will take a little bit of research to com- plete:
+% Create a basic OTP server that logs messages to a file. Make the translate_service work across a network.
